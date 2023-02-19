@@ -51,8 +51,10 @@ This application will use .Net 7, GraphQL, Entity Framework 7 with SQL Server.
 # For creating and altering database
 #Add below Nuget Packages
 Microsoft.EntityFrameworkCore.Tools
+	
 Microsoft.EntityFrameworkCore.Design
 
 # Open Package manager console and run below commands
 Add-Migration "<migration_name>"
+	
 update-database
