@@ -59,7 +59,7 @@ Add-Migration "<migration_name>"
 	
 update-database
 
-# Sample for mutation
+# Samples
 
 # 1. Mutation for Regions
 
@@ -96,3 +96,13 @@ variable
   }
 }
 
+# 2. Query for Regions
+query {
+  regionQuery{
+    regions{
+      id,
+      name,
+      description
+    }
+  }
+}
