@@ -41,6 +41,8 @@ This application will use .Net 7, GraphQL, Entity Framework 7 with SQL Server.
 	
 	TO DO
 	
+	
 28. Add Unity of Work Pattern
 29. Add Businss layer
-30. Add Transactions, if required.	
+30. Add Transactions, if required.
+31. Add async await	
