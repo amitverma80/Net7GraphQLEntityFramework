@@ -37,33 +37,10 @@ This application will use .Net 7, GraphQL, Entity Framework 7 with SQL Server.
 25. Add DBSet Property for your Model class. This will create table in Database for this entity.
 26. In the service class created in Step 7, add object for this DBContext class.
 27. Change Program.cs for DBContext Class.
-28. In the browser Check this
-{
-  products{
-    id,
-    name,
-    price
-  }
-}
-
-mutation CreateProduct($product:ProductInputType){
-  createProduct(product:$product){
-    id,
-    name,
-    price
-  }
-}
-
-{
-  "product":{
-    "name": "Coffee",
-    "price": 25
-  }
-}
-
-{
-  product(id:1){
-    name,
-    price
-  }
-}
+	
+	
+	TO DO
+	
+28. Add Unity of Work Pattern
+29. Add Businss layer
+30. Add Transactions, if required.	
