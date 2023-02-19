@@ -1,6 +1,6 @@
 # .Net 7-> GraphQL with EF 7
 
-This application will use .Net 6, GraphQL, Entity Framework 6 with SQL Server.
+This application will use .Net 7, GraphQL, Entity Framework 7 with SQL Server.
 
 1. Create ASP.Net Web API Project.
 2. Create New folder "Models" inside this project.
