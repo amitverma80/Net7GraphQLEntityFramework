@@ -58,3 +58,41 @@ Microsoft.EntityFrameworkCore.Design
 Add-Migration "<migration_name>"
 	
 update-database
+
+# Query Sample
+
+# 1. Mutation for Regions
+
+mutation ($region:RegionInputType){
+  regionMutation{
+    createRegion(region:$region){
+      id,
+      name,
+      description
+    }
+  }
+}
+
+variable
+
+{
+  "region": {
+    "name": "Australia",
+    "description": "This is australian region"
+  }
+}
+
+{
+  "region": {
+    "name": "Europe",
+    "description": "This is european region"
+  }
+}
+
+{
+  "region": {
+    "name": "Asia",
+    "description": "This is asian region"
+  }
+}
+
