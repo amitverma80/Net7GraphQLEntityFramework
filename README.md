@@ -59,7 +59,7 @@ Add-Migration "<migration_name>"
 	
 update-database
 
-# Query Sample
+# Sample for mutation
 
 # 1. Mutation for Regions
 
