@@ -40,9 +40,19 @@ This application will use .Net 7, GraphQL, Entity Framework 7 with SQL Server.
 	
 	
 	TO DO
+======================
 	
 	
 28. Add Unity of Work Pattern
 29. Add Businss layer
 30. Add Transactions, if required.
 31. Add async await	
+
+#For creating and altering database
+#Add below Nuget Packages
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.Design
+
+#Open Package manager console and run below commands
+Add-Migration "<migration_name>"
+update-database
