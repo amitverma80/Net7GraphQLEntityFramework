@@ -11,7 +11,7 @@ namespace GraphQLReal.Mutations
     {
         public RegionMutation(IRegions regionService)
         {
-            Field<JobType>("createRegion", arguments: new QueryArguments(new QueryArgument<RegionInputType> { Name = "region" }),
+            Field<RegionType>("createRegion", arguments: new QueryArguments(new QueryArgument<RegionInputType> { Name = "region" }),
                 resolve: context =>
                 {
                     return regionService.Add(context.GetArgument<Regions>("region"));

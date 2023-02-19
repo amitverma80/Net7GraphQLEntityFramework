@@ -14,7 +14,10 @@ namespace GraphQLReal.Services
 
         public Regions Add(Regions region)
         {
-            throw new NotImplementedException();
+            _context.Regions.Add(region);
+            _context.SaveChanges();
+
+            return region;
         }
 
         public void Delete(Regions region)
@@ -24,7 +27,7 @@ namespace GraphQLReal.Services
 
         public List<Regions> GetAll()
         {
-            throw new NotImplementedException();
+           return _context.Regions.ToList();
         }
 
         public Regions GetById(int id)

@@ -1,5 +1,5 @@
 /*
- Important Links 
+Important Links 
 
 https://www.sqltutorial.org/sql-sample-database/
 
@@ -90,7 +90,7 @@ using (var scope = app.Services.CreateScope())
 {
     using (var context = scope.ServiceProvider.GetService<HRDataContext>())
     {
-        context.Database.EnsureCreated();
+        context?.Database.Migrate();
     }
 }
 
