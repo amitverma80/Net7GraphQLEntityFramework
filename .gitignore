@@ -328,3 +328,6 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+/GraphQLReal/Migrations/20230219103808_HRdatabase.cs
+/GraphQLReal/Migrations/20230219103808_HRdatabase.Designer.cs
+/GraphQLReal/Migrations/HRDataContextModelSnapshot.cs
