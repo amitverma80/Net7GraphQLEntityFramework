@@ -24,15 +24,34 @@ namespace GraphQLReal.Services
         {
             throw new NotImplementedException();
         }
-
+        /*
+        query { regionQuery{ regions{ id, name, description } } }         
+         */
         public List<Regions> GetAll()
         {
-           return _context.Regions.ToList();
+            return _context.Regions.ToList();
         }
 
+        /*
+         {
+          regionQuery {     
+            region (id:2){       
+              id
+              name 
+              description
+            }
+          }
+        }         
+        */
         public Regions GetById(int id)
         {
-            throw new NotImplementedException();
+            var result = _context.Regions.Where(x => x.Id == id).FirstOrDefault();
+
+            if (result != null)
+            {
+                return result;
+            }
+            return new Regions();
         }
 
         public Regions Update(Regions region)
